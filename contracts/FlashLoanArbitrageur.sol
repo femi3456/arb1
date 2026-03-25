@@ -23,7 +23,7 @@ contract FlashLoanArbitrageur is IFlashLoanReceiver, Ownable {
         address _curvePool,
         address _tokenA,
         address _tokenB
-    ) Ownable(msg.sender) {
+) Ownable() {
         lendingPool = ILendingPool(_lendingPool);
         uniswapRouter = ISwapRouter(_uniswapRouter);
         curvePool = ICurveStableSwap(_curvePool);

@@ -1,50 +1,24 @@
 {
-  "_format": "hh3-artifact-1",
+  "_format": "hh-sol-artifact-1",
   "contractName": "IFlashLoanReceiver",
   "sourceName": "contracts/interfaces/IFlashLoanReceiver.sol",
   "abi": [
     {
-      "inputs": [],
-      "name": "ADDRESSES_PROVIDER",
-      "outputs": [
-        {
-          "internalType": "address",
-          "name": "",
-          "type": "address"
-        }
-      ],
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "inputs": [],
-      "name": "LENDING_POOL",
-      "outputs": [
-        {
-          "internalType": "address",
-          "name": "",
-          "type": "address"
-        }
-      ],
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
       "inputs": [
         {
-          "internalType": "address",
-          "name": "asset",
-          "type": "address"
+          "internalType": "address[]",
+          "name": "assets",
+          "type": "address[]"
         },
         {
-          "internalType": "uint256",
-          "name": "amount",
-          "type": "uint256"
+          "internalType": "uint256[]",
+          "name": "amounts",
+          "type": "uint256[]"
         },
         {
-          "internalType": "uint256",
-          "name": "premium",
-          "type": "uint256"
+          "internalType": "uint256[]",
+          "name": "premiums",
+          "type": "uint256[]"
         },
         {
           "internalType": "address",
@@ -60,9 +34,9 @@
       "name": "executeOperation",
       "outputs": [
         {
-          "internalType": "bytes32",
+          "internalType": "bool",
           "name": "",
-          "type": "bytes32"
+          "type": "bool"
         }
       ],
       "stateMutability": "nonpayable",
@@ -72,8 +46,5 @@
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "linkReferences": {},
-  "deployedLinkReferences": {},
-  "immutableReferences": {},
-  "inputSourceName": "project/contracts/interfaces/IFlashLoanReceiver.sol",
-  "buildInfoId": "solc-0_8_28-04976e8d1e3a36b5a90801805de99dba7590ec53"
+  "deployedLinkReferences": {}
 }

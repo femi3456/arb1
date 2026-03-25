@@ -1,40 +1,8 @@
 {
-  "_format": "hh3-artifact-1",
+  "_format": "hh-sol-artifact-1",
   "contractName": "ICurveStableSwap",
   "sourceName": "contracts/interfaces/ICurveStableSwap.sol",
   "abi": [
-    {
-      "inputs": [],
-      "name": "N_COINS",
-      "outputs": [
-        {
-          "internalType": "uint256",
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "inputs": [
-        {
-          "internalType": "uint256",
-          "name": "arg0",
-          "type": "uint256"
-        }
-      ],
-      "name": "coins",
-      "outputs": [
-        {
-          "internalType": "address",
-          "name": "",
-          "type": "address"
-        }
-      ],
-      "stateMutability": "view",
-      "type": "function"
-    },
     {
       "inputs": [
         {
@@ -102,8 +70,5 @@
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "linkReferences": {},
-  "deployedLinkReferences": {},
-  "immutableReferences": {},
-  "inputSourceName": "project/contracts/interfaces/ICurveStableSwap.sol",
-  "buildInfoId": "solc-0_8_28-04976e8d1e3a36b5a90801805de99dba7590ec53"
+  "deployedLinkReferences": {}
 }
