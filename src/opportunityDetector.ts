@@ -1,7 +1,7 @@
 import { ethers } from "ethers";
-import { CONFIG } from "./config";
-import { logger } from "./logger";
-import { getProvider } from "./provider";
+import { CONFIG } from "./config.js";
+import { logger } from "./logger.js";
+import { getProvider } from "./provider.js";
 
 export class OpportunityDetector {
   private provider: ethers.JsonRpcProvider;

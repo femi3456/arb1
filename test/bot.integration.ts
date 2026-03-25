@@ -1,5 +1,7 @@
+// @ts-ignore - Hardhat ethers is available globally
+declare const ethers: any;
+
 import { expect } from "chai";
-import { ethers } from "hardhat";
 
 describe("FlashLoanArbitrageur", function () {
   let contract: any;
@@ -20,7 +22,9 @@ describe("FlashLoanArbitrageur", function () {
   });
 
   it("Should deploy successfully", async function () {
-    expect(await contract.getAddress()).to.be.properAddress;
+    const address = await contract.getAddress();
+    expect(address).to.be.a("string");
+    expect(address).to.match(/^0x[a-fA-F0-9]{40}$/);
   });
 
   it("Should set the owner correctly", async function () {

@@ -1,6 +1,6 @@
 import { ethers } from "ethers";
-import { CONFIG } from "./config";
-import { logger } from "./logger";
+import { CONFIG } from "./config.js";
+import { logger } from "./logger.js";
 
 let _provider: ethers.JsonRpcProvider;
 let _wallet: ethers.Wallet;

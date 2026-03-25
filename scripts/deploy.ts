@@ -1,5 +1,7 @@
-import { ethers } from "hardhat";
-import { logger } from "../src/logger";
+// @ts-ignore - Hardhat ethers is available globally
+declare const ethers: any;
+
+import { logger } from "../src/logger.js";
 
 async function main() {
   logger.info("Deploying FlashLoanArbitrageur contract...");

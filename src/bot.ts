@@ -1,8 +1,8 @@
 import { ethers } from "ethers";
-import { CONFIG } from "./config";
-import { logger } from "./logger";
-import { provider } from "./provider";
-import { OpportunityDetector } from "./opportunityDetector";
+import { CONFIG } from "./config.js";
+import { logger } from "./logger.js";
+import { provider } from "./provider.js";
+import { OpportunityDetector } from "./opportunityDetector.js";
 
 async function main() {
   logger.info("Starting MEV Arbitrage Bot...");
